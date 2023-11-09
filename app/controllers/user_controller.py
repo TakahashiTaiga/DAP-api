@@ -1,8 +1,8 @@
-from app.models.user_model import userModle as um
+from app.models.user_model import userModel
 from app.data_classes.user_data_classes.user_data import UserData
 
 
 class userController:
-    def signup(userdata: UserData):
-        result = um.signup(userdata)
+    def login(user_data: UserData):
+        result = userModel.login(user_data)
         return result

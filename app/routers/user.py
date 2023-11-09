@@ -4,13 +4,13 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 
 from app.data_classes.user_data_classes.user_data import UserData
-from app.controllers.user_controller import userController as uc
+from app.controllers.user_controller import userController
 
 
 app = FastAPI()
 
 
-@app.post("/signup/")
-async def signup(userdata: UserData):
-    result = uc.signup(userdata)
+@app.post("/login")
+async def login(user_data: UserData):
+    result = userController.login(user_data)
     return result
