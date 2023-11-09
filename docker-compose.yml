@@ -1,17 +1,7 @@
 version: "3"
 services:
-  DAP-api:
-    container_name: DAP-api
-    build: ./docker
-    # command: tail -f /dev/null
-    # networks:
-    #   ds1-container-network:
+  dap-api:
+    container_name: dap-api
+    build: .
     ports:
       - 8080:80
-      
-# networks:
-#   ds1-container-network:
-#     ipam:
-#       driver: default
-#       config:
-#         - subnet: 10.254.249.0/24

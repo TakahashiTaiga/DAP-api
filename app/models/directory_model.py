@@ -1,10 +1,10 @@
 class directoryModle:
-    def top():
+    async def top():
         # use db handler with userdata
         result = 'something'
         return result
 
-    def file():
+    async def file():
         # use db handler with userdata
         result = 'something'
         return result
